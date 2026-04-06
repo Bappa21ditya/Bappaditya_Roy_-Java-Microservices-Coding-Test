@@ -3,6 +3,10 @@
 
 Approach: 
 
+This microservice is designed using a layered architecture where the controller handles API requests, the service layer contains business logic, and the repository manages data operations. DTOs are used for data transfer between client and server, helping to decouple internal models from external APIs. Mappers convert between DTOs and entities to maintain clean separation of concerns. Validation ensures correct input data, and global exception handling provides consistent and meaningful error responses. The service layer is interface-driven, making the design flexible and extensible for future implementations.
+
+
+
 1.Flow Diagram
 
         ┌───────────────────────────────┐
@@ -88,7 +92,7 @@ Repository
 
 
 
-============================>
+
 
 
 Future Enhancements:
